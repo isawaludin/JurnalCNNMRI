@@ -1,26 +1,26 @@
 \section{Jurnal CNN MRI}
 \subsection{2015}
 \begin{enumerate}
-  \item Judul : \textit{Deep Convolutional Neural Networks for the Segmentation of Gliomas in Multi-sequence MRI}
+  \item Judul : Jaringan Neural Konvolusional yang Dalam untuk Segmentasi Glioma dalam MRI Multi-urutanequence MRI
   \item Author : \textit{Pereira, S{\'e}rgio and Pinto, Adriano and Alves, Victor and Silva, Carlos A}
   \item Journal : \textit{booktitle = BrainLes 2015, pages = 131--143, year = 2015, organization = Springer}
-  \item Masalah : \textit{to segment brain tumors using a Deep Convolutional Neural Network. Neural Networks are known to suffer from overfitting.}
-  \item Kontribusi : \textit{In this paper, we presented a CNN to segment brain tumors in MRI. Excluding when the user needs to identify the tumor grade, all steps in the processing pipeline are automatic. Although simple, this architecture shows promising
-Deep CNNs for the Segmentation of Gliomas in Multi-sequence MRI 141
-results, with space for further developments, especially in the Core region and
-segmentation of LGG; in the Challenge data set the proposed method was ranked
-in the second position. As future work, we want to make a totally grade independent method, possibly through a joint LGG/HGG training or an automatic
-grade identification procedure before segmentation.}
+  \item Masalah : untuk mensegmentasikan tumor otak menggunakan Deep Neural Network. Neural Networks diketahui menderita overfitting.
+  \item Kontribusi : Menyajikan CNN ke segmen tumor otak di MRI. Tidak termasuk ketika pengguna perlu mengidentifikasi tingkat tumor, semua langkah dalam pipa pemrosesan otomatis. Meski sederhana, arsitektur ini menunjukkan menjanjikan
+CNN dalam untuk Segmentasi Glioma dalam Multi-sequence MRI 141
+hasil, dengan ruang untuk pengembangan lebih lanjut, terutama di wilayah Core dan
+segmentasi LGG; dalam set data Tantangan metode yang diusulkan diberi peringkat
+di posisi kedua. Sebagai pekerjaan di masa depan, kami ingin membuat metode mandiri yang sepenuhnya bermutu, mungkin melalui pelatihan LGG / HGG bersama atau otomatis
+prosedur identifikasi kelas sebelum segmentasi.
 
-  \item Metode / Solusi : \textit{use Dropout, Leaky Rectifier Linear Units and small convolutional kernels.} 
-  \item Hasil : \textit{in each grade of the Training data set were used for training the CNN, with
-the exception of six validation patients in each grade. To train the CNNs we
-extracted around 4,000,000 training patches of HGG and 1,800,000 of LGG, and
-we used mini-batches of 128 training samples. However, the number of training
-patches was 4 times bigger due to the data augmentation. Observing Fig. 4, the
-segmentations seem coherent with the expected tumor tissues, for example, the
-enhanced tumor portions appear delineated following the enhancing parts in
-T1c. Also, the complete tumor appears to be well delineated, when comparing
-with the FLAIR and T2 sequences, where the edema is hyperintense.}
-  \item Batasan : \textit{used mini-batches of 128 training samples}
-\end{enumerate}
+  \item Metode / Solusi : Menggunakan Dropout, Leaky Rectifier Linear Units dan small convolutional kernels.
+  \item Hasil : Segmentasi tampak koheren dengan jaringan tumor yang diharapkan, misalnya
+porsi tumor yang ditingkatkan tampak digambarkan mengikuti bagian-bagian yang meningkatkan di
+T1c. Juga, tumor lengkap tampaknya digambarkan dengan baik, ketika membandingkan
+dengan urutan FLAIR dan T2, di mana edema adalah hyperintense.
+  \item Batasan : di setiap kelas dari kumpulan data Pelatihan digunakan untuk melatih CNN, dengan
+terkecuali enam pasien validasi di setiap kelas. Untuk melatih CNN kita
+mengekstrak sekitar 4.000.000 tambalan pelatihan HGG dan 1.800.000 LGG, dan
+kami menggunakan batch kecil 128 sampel pelatihan. Namun, jumlah pelatihannya
+tambalan 4 kali lebih besar karena augmentasi data.
+  \item Link : https://link.springer.com/chapter/10.1007/978-3-319-30858-6_12
+\end{enumerate} 
