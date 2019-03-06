@@ -1,0 +1,26 @@
+\section{Jurnal CNN MRI}
+\subsection{2015}
+\begin{enumerate}
+  \item Judul : \textit{Deep Convolutional Neural Networks for the Segmentation of Gliomas in Multi-sequence MRI}
+  \item Author : \textit{Pereira, S{\'e}rgio and Pinto, Adriano and Alves, Victor and Silva, Carlos A}
+  \item Journal : \textit{booktitle = BrainLes 2015, pages = 131--143, year = 2015, organization = Springer}
+  \item Masalah : untuk mensegmentasikan tumor otak menggunakan Deep Neural Network. Neural Networks diketahui menderita overfitting.
+  \item Kontribusi : Menyajikan CNN ke segmen tumor otak di MRI. Tidak termasuk ketika pengguna perlu mengidentifikasi tingkat tumor, semua langkah dalam pipa pemrosesan otomatis. Meski sederhana, arsitektur ini menunjukkan menjanjikan
+CNN dalam untuk Segmentasi Glioma dalam Multi-sequence MRI 141
+hasil, dengan ruang untuk pengembangan lebih lanjut, terutama di wilayah Core dan
+segmentasi LGG; dalam set data Tantangan metode yang diusulkan diberi peringkat
+di posisi kedua. Sebagai pekerjaan di masa depan, kami ingin membuat metode mandiri yang sepenuhnya bermutu, mungkin melalui pelatihan LGG / HGG bersama atau otomatis
+prosedur identifikasi kelas sebelum segmentasi.
+
+  \item Metode / Solusi : Menggunakan Dropout, Leaky Rectifier Linear Units dan small convolutional kernels.
+  \item Hasil : Segmentasi tampak koheren dengan jaringan tumor yang diharapkan, misalnya
+porsi tumor yang ditingkatkan tampak digambarkan mengikuti bagian-bagian yang meningkatkan di
+T1c. Juga, tumor lengkap tampaknya digambarkan dengan baik, ketika membandingkan
+dengan urutan FLAIR dan T2, di mana edema adalah hyperintense.
+  \item Batasan : di setiap kelas dari kumpulan data Pelatihan digunakan untuk melatih CNN, dengan
+terkecuali enam pasien validasi di setiap kelas. Untuk melatih CNN kita
+mengekstrak sekitar 4.000.000 tambalan pelatihan HGG dan 1.800.000 LGG, dan
+kami menggunakan batch kecil 128 sampel pelatihan. Namun, jumlah pelatihannya
+tambalan 4 kali lebih besar karena augmentasi data.
+  \item Link : https://link.springer.com/chapter/10.1007/978-3-319-30858-6_12
+\end{enumerate} 
