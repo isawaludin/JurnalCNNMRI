@@ -6,9 +6,12 @@
    \item Author : Sérgio Pereira, Adriano Pinto, Victor Alves, and Carlos A. Silva
     \item Jurnal : Judul buku= pereira2016brain, Halaman = 1240-1251, Tahun = 2016
      \item Permasalahan = Penggunaan Metode berbasis CNN untuk segmentasi tumor otak
-
-     
-\section{Abstrack}
+      \item Kontribusi =  Hal ini dapat menunjukkan menjanjikan  CNN dalam untuk Segmentasi Glioma dalam Multi-sequence MRI 141 hasil, dengan ruang untuk pengembangan lebih lanjut, terutama di wilayah Core dan segmentasi LGG; dalam set data Tantangan metode yang diusulkan diberi peringkat di posisi kedua. Sebagai pekerjaan di masa depan, kami ingin membuat metode mandiri yang sepenuhnya bermutu, mungkin melalui pelatihan LGG / HGG bersama atau otomatis prosedur identifikasi kelas sebelum segmentasi.
+\item Link : https://ieeexplore.ieee.org/abstract/document/7426413/
+\item Batasan : Neoplasma ini dapat dinilai
+menjadi Low Grade Gliomas (LGG) dan High Grade Gliomas (HGG), dengan yang sebelumnya kurang agresif dan infltratif daripada yang terakhir.  Bahkan dalam perawatan, pasien tidak bertahan hidup rata-rata lebih dari 14 bulan setelah diagnosis. Perawatan saat ini termasuk operasi, kemoterapi, radioterapi, atau kombinasi dari mereka. MRI sangat berguna untuk menilai glioma dalam praktik klinis, karena dimungkinkan untuk memperoleh sekuens MRI yang memberikan informasi tambahan 
+ 
+\section{Penjelasan}
 Di antara tumor otak, glioma adalah yang paling umum dan agresif, yang mengarah ke harapan hidup yang sangat singkat di tingkat tertinggi. Dengan demikian, perencanaan perawatan adalah tahap kunci untuk meningkatkan kualitas hidup pasien onkologis. Magnetic resonance imaging (MRI) adalah teknik pencitraan yang banyak digunakan untuk menilai tumor ini, tetapi sejumlah besar data yang dihasilkan oleh MRI mencegah segmentasi manual dalam waktu yang wajar, membatasi penggunaan pengukuran kuantitatif yang tepat dalam praktik klinis. Jadi, diperlukan metode segmentasi otomatis dan andal; Namun, variabilitas spasial dan struktural yang besar di antara tumor otak membuat segmentasi otomatis menjadi masalah yang menantang. Dalam tulisan ini, kami mengusulkan metode segmentasi otomatis berdasarkan Convolutional Neural Networks (CNN), mengeksplorasi 3 3 kernel. Penggunaan kernel kecil memungkinkan perancangan arsitektur yang lebih dalam, selain memiliki efek positif terhadap overfitting, mengingat jumlah bobot yang lebih sedikit dalam jaringan. Kami juga menyelidiki penggunaan normalisasi intensitas sebagai langkah pra-pemrosesan, yang meskipun tidak umum dalam metode segmentasi berbasis CNN, terbukti bersama dengan augmentasi data menjadi sangat efektif untuk segmentasi tumor otak pada gambar MRI. Proposal kami divalidasi dalam database Brain Tumor Segmentation Challenge 2013 (BRATS
 2013), mendapatkan secara simultan posisi pertama untuk daerah yang lengkap, inti, dan meningkatkan dalam metrik Koefisien Kesamaan Dadu (0,88, 0,83, 0,77) untuk kumpulan data Tantangan. Juga, itu diperoleh
 posisi keseluruhan pertama oleh platform evaluasi online. Kami juga
