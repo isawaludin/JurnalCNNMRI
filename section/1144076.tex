@@ -1,0 +1,46 @@
+\section{CNNMRI}
+\begin{itemize}
+
+\item judul
+Multi-scale 3D convolutional neural networks for lesion segmentation in brain MRI
+
+\item author
+Kamnitsas, Konstantinos and Chen, Liang and Ledig, Christian and Rueckert, Daniel and Glocker, Ben
+
+\item jurnal
+jurnal (Ischemic stroke lesion segmentation), volume=13, halaman(46), tahun (2015)
+
+\item url 
+http://www.isles-challenge.org/ISLES2015/pdf/20150930_ISLES2015_Proceedings.pdf#page=21
+
+\item masalah
+
+Kami menghadirkan 11-layer deep, jalur ganda, 3D Convolutional Neural Network kami, yang dikembangkan untuk segmentasi lesi otak.
+Segmen sistem yang dikembangkan patologi voxel-bijaksana setelah pemrosesan a
+patch 3D multi-modal yang sesuai pada berbagai skala. Kami berdemonstrasi
+bahwa mungkin untuk melatih CNN 3D yang mendalam dan lebar pada yang kecil
+dataset 28 kasus.
+
+\item kontribusi
+
+Jaringan kami memberikan hasil yang menjanjikan pada tugas
+segmentasi lesi stroke iskemik, mencapai Dice rata-rata 64%
+(66% setelah postprocessing) pada dataset pelatihan ISLES 2015, peringkat di antara entri teratas.
+
+\item metode/solusi
+Network Architecture & Data Preprocessing, Augmentation and Postprocessing
+
+\item hasil
+Arsitektur kami menunjukkan kinerja yang menjanjikan, dengan kemampuan yang halus
+segmentasi. Kesulitan diamati dalam segmentasi lesi ukuran sangat kecil. Pemisahan lesi ke dalam kategori yang berbeda, misalnya
+sesuai dengan ukuran mereka, dan perawatan mereka dengan pengklasifikasi yang terpisah dapat menyederhanakan
+tugas untuk setiap pelajar dan membantu meringankan masalah.
+
+\item batasan
+Convolutional Neural Networks (CNNs) telah selanjutnya diterapkan
+berhasil pada berbagai masalah segmentasi biomedis. Paling maju
+pendekatan mengandalkan adaptasi CNN 2D untuk memproses volume 3D, dengan kesulitan dilaporkan saat pelatihan CNN 3D dicoba.
+Sementara arsitektur jaringan 2D ini mungkin berhasil dalam beberapa masalah,
+mereka tidak optimal dalam penggunaan informasi 3D yang tersedia. 3D murni pertama
+Ulasan CNN disajikan dalam, di mana ia digunakan untuk segmentasi tumor otak.
+\end{itemize}
