@@ -1,0 +1,37 @@
+\section{CNNMRI}
+\begin{itemize}
+\item Judul
+Automatic Detection of Cerebral Microbleeds from MR Images via 3D Convolutional Neural Networks 
+
+\item Author
+Dou, Qi and Chen, Hao and Yu, Lequan and Zhao, Lei and Qin, Jing and Wang, Defeng and Mok, Vincent CT and Shi, Lin and Heng, Pheng-Ann
+
+\item Journal = IEEE transactions on medical imaging, year = 2016, publisher = IEEE, volume= 35, number = 5, pages= 1182--1195
+
+\item Problem
+Saat ini klinis rutin, otak microbleeds atau CMB secara manual dicap oleh ahli radiologi prosedur ini rumit, memakan waktu dan kesalahan rentan.
+
+\item Contribution 
+ \begin{enumerate}
+\item untuk pertama kalinya 3D CNN untuk deteksi otomatis  CMBs dari otak volumetrik SWI gambar. dengan menggunakan ini menunjukan kinerja lebih bak dari pada metode sebelumnya menggunakan 2D CNN.  kami merupakan salah satu pelopor 3D CNN untuk deteksi otomatis kunci biomarker dari Volumetrik data medis
+\item kami mengusulkan suatu traditional sliding window strategy. 3D FCN mampu memasukkan seluruh volumenter data dan langsung menghasilkan 3D prediksi skor volume dalam propagasi single forward. dengan cara ini kecepatan deteksi secara dramatis dipercepat.
+\item Tahap penyaringan dengan 3D FCN cepat mengambil calon, dan diskriminasi panggung dengan 3D CNN berfokus pada calon untuk lebih akurat satu CMBs sejati dari meniru menantang. Selain itu, kerangka yang diusulkan ini Umum dan dapat dengan mudah disesuaikan untuk tugas-tugas deteksi penanda lain. 
+\end{enumerate}
+
+\item Method/Solution 
+\subitem 3D Convolutional Neural Network 
+Biasanya, CNN atau tumpukan convolutional (C) dan sub sampling, misalnya, max-penggabungan (M), lapisan. Di lapisan C, fitur kecil extractors (kernel) menyapu topologi dan mengubah input menjadi fitur peta. Di lapisan M, aktivasi dalam lingkungan yang disarikan untuk memperoleh invariance lokal terjemahan. Setelah beberapa C dan M lapisan, fitur peta yang ﬂattened ke vektor fitur, diikuti oleh sepenuhnya terhubung (FC) lapisan. Akhirnya, lapisan classiﬁcation softmax menghasilkan prediksi kemungkinan.
+\subitem 3D Fully Convolutional Network
+Salah satu keprihatinan utama tentang mengeksploitasi CNN di domain pencitraan medis terletak di kinerja waktu, seperti banyak aplikasi medis membutuhkan respon yang cepat untuk lebih lanjut diagnosis dan pengobatan. Dalam situasi lebih ketat saat memproses Volumetrik data medis.
+\subitem Two-stage Cascaded Framework
+Untuk mendeteksi CMBs dari MR gambar, kami mempekerjakan Model CNN berbasis 3D untuk menyadap potensi spasial informasi dalam semua tiga dimensi dan mewakili mereka sebagai fitur tingkat tinggi. Kami membangun 3D FCN model dan CNN model 3D disesuaikan untuk dua tahap yang berbeda dan mengintegrasikan mereka ke dalam efﬁcient dan kuat deteksi kerangka. Dalam kerangka mengalir untuk deteksi CMB setiap tahap menyajikan misinya sendiri. Tahap penyaringan dengan 3D FCN bertujuan untuk secara akurat menolak daerah latar belakang dan dengan cepat mengambil sejumlah kecil calon. Diskriminasi panggung dengan 3D CNN berfokus hanya pada set disaring calon untuk lebih lanjut satu CMBs benar dari meniru menantang. 
+
+\item Main Results
+hasil eksperimen menunjukan bahwa metode yang diusulkan mengungguli metode sebelumnya dengan margin besar dengan sensitivitas deteksi lebih tinggi dan lebih sedikit positif palsu. Metode yang diusulkan dapat dengan mudah diadaptasi untuk tugas-tugas deteksi dan segmentasi lainnya dan meningkatkan penerapan CNN 3D pada data medis volumetrik.
+
+\item Limitation 
+mendeteksi CMB dari gambar resonansi magnetik (MR) dengan mengeksploitasi jaringan saraf convolutional 3D.
+
+\end{itemize}
+
+link : https://ieeexplore.ieee.org/abstract/document/7403984
